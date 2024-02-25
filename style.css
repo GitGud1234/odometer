@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+h2 {
+  margin-right: 30px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #222;
+  color: #fff;
+}
+
+.indicator-container {
+  position: absolute;
+  right: 0;
+}
+
+.indicator {
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.odometer {
+  font-size: 3rem;
+  color: white;
+}
+
+.flash-green {
+  animation: flash-green 2.5s infinite alternate;
+}
+
+.flash-red {
+  animation: flash-red 2.5s infinite alternate;
+}
+
+@keyframes flash-green {
+  0% {
+    color: green;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+  /* The animation duration for each step is 1 second */
+}
+@keyframes flash-red {
+  0% {
+    color: red;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
