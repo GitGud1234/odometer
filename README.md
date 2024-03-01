@@ -1,3 +1,5 @@
+Checkout the project here (hosted via GitHub pages): https://gitgud1234.github.io/odometer/
+
 # odometer
 
 random odometer = randometer
